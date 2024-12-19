@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import { useState } from "react";
 
 interface SliderImages {
@@ -21,5 +22,14 @@ const SliderContainer = () => {
       alt: "Epic Crispy Onion 10% OFF",
     },
   ]);
-  return <div>SliderContainer</div>;
+  return (
+    <div>
+      <Image
+        src={sliderImages[sliderIndex].src}
+        width={500}
+        height={200}
+        alt={sliderImages[sliderIndex].src}
+      />
+    </div>
+  );
 };
