@@ -6,7 +6,7 @@ interface SliderImages {
   src: string;
   alt: string;
 }
-const SliderContainer = () => {
+export const SliderContainer = () => {
   const [sliderIndex, setSliderIndex] = useState(0);
   const [sliderImages] = useState<SliderImages[]>([
     {
