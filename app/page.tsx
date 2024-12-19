@@ -4,13 +4,13 @@ import { PrimaryButton } from "./components/buttons/PrimaryButton";
 import Link from "next/link";
 export default function Home() {
   return (
-    <div className="bg-primary flex flex-col w-screen h-screen">
-      <div className="flex flex-col justify-center items-center w-screen h-screen">
-        <div className="flex justify-center items-center">
+    <div className="flex flex-col w-screen h-screen bg-primary">
+      <div className="flex flex-col items-center justify-center w-screen h-screen">
+        <div className="flex items-center justify-center">
           <Image src={EpicBurgerLogo} alt="Epic Burger Logo" width={400} />
         </div>
         <div>
-          <Link href={"/homepage"}>
+          <Link href={"/burgers"}>
             <PrimaryButton label="Pedi tu Hambruguesa" />
           </Link>
         </div>
