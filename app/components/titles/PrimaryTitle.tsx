@@ -3,6 +3,6 @@ interface TitleProps {
   }
   
   export const PrimaryTitle: React.FC<TitleProps> = ({ text }) => {
-    return <h1>{text}</h1>;
+    return <h1 className="">{text}</h1>;
   };
   
