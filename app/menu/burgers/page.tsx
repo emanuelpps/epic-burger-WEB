@@ -7,8 +7,10 @@ const page = () => {
   return (
     <div className="w-full flex justify-center items-center h-full flex-col">
       <Slide />
-      <div className="w-full flex justify-start items-start">
-        <PrimaryTitle text="Burgers" />
+      <div className="w-[100%] flex justify-center items-center">
+        <div className="w-[80%] mt-10">
+          <PrimaryTitle text="Burgers" />
+        </div>
       </div>
       <ProductContainer />
     </div>
