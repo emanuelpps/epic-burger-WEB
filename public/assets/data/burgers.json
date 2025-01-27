@@ -1,0 +1,72 @@
+[
+    {
+        "name": "Classic Burger",
+        "price": 8.99,
+        "description": "A classic beef burger with lettuce, tomato, and cheese.",
+        "customerRating": 4.5,
+        "image": "classic-burger.jpg"
+    },
+    {
+        "name": "Cheese Lover's Burger",
+        "price": 9.99,
+        "description": "A beef burger loaded with cheddar, Swiss, and American cheese.",
+        "customerRating": 4.7,
+        "image": "cheese-lovers-burger.jpg"
+    },
+    {
+        "name": "Bacon Burger",
+        "price": 10.99,
+        "description": "A beef burger topped with crispy bacon and cheddar cheese.",
+        "customerRating": 4.8,
+        "image": "bacon-burger.jpg"
+    },
+    {
+        "name": "Mushroom Swiss Burger",
+        "price": 11.49,
+        "description": "A beef burger with sautéed mushrooms and Swiss cheese.",
+        "customerRating": 4.6,
+        "image": "mushroom-swiss-burger.jpg"
+    },
+    {
+        "name": "BBQ Burger",
+        "price": 10.49,
+        "description": "A beef burger with BBQ sauce, onion rings, and cheddar cheese.",
+        "customerRating": 4.7,
+        "image": "bbq-burger.jpg"
+    },
+    {
+        "name": "Spicy Jalapeno Burger",
+        "price": 9.99,
+        "description": "A beef burger with jalapenos, pepper jack cheese, and spicy mayo.",
+        "customerRating": 4.5,
+        "image": "spicy-jalapeno-burger.jpg"
+    },
+    {
+        "name": "Veggie Burger",
+        "price": 8.49,
+        "description": "A vegetarian burger with lettuce, tomato, and avocado.",
+        "customerRating": 4.4,
+        "image": "veggie-burger.jpg"
+    },
+    {
+        "name": "Chicken Burger",
+        "price": 9.49,
+        "description": "A grilled chicken burger with lettuce, tomato, and mayo.",
+        "customerRating": 4.6,
+        "image": "chicken-burger.jpg"
+    },
+    {
+        "name": "Fish Burger",
+        "price": 10.99,
+        "description": "A crispy fish burger with tartar sauce and lettuce.",
+        "customerRating": 4.5,
+        "image": "fish-burger.jpg"
+    },
+    {
+        "name": "Double Beef Burger",
+        "price": 12.99,
+        "description": "A double beef burger with double cheese and all the fixings.",
+        "customerRating": 4.8,
+        "image": "double-beef-burger.jpg"
+    }
+]

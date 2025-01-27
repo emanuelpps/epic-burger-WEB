@@ -1,7 +1,10 @@
-import React from 'react';
+import { ProductCard } from "@/app/components/productCard/ProductCard";
+import React from "react";
 
 export const ProductContainer = () => {
   return (
-    <div>ProductContainer</div>
-  )
-}
+    <div>
+      <ProductCard />
+    </div>
+  );
+};
