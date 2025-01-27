@@ -25,7 +25,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
     <div id="product-card-container">
       <div
         id="product-card"
-        className="flex flex-col h-60 bg-white rounded-lg shadow-lg w-48 justify-center"
+        className="flex flex-col h-65 bg-white rounded-lg shadow-lg w-50 justify-center p-5"
       >
         <div id="product-header" className="flex justify-between w-[90%]">
           <div id="discount-section">{discount ? discount : null}</div>
