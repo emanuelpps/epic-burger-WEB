@@ -50,9 +50,9 @@ export const ProductCard: React.FC<ProductCardProps> = ({
           </div>
           <div
             id="add-button"
-            className="flex justify-center items-center bg-[#F8B602] rounded-s-sm"
+            className="flex justify-center items-center bg-[#F8B602] rounded-md"
           >
-            <HiOutlinePlusSm className="text-white h-6 w-6 p-1" />
+            <HiOutlinePlusSm className="text-white h-10 w-10 p-1" />
           </div>
         </div>
       </div>
