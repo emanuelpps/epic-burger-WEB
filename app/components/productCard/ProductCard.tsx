@@ -45,8 +45,13 @@ export const ProductCard: React.FC<ProductCardProps> = ({
         }
         <div id="product-detail" className="flex justify-between w-[90%]">
           <div id="price-title">
-            <div id="product-title">{title}</div>
-            <div id="product-price">{price}</div>
+            <div id="product-title" className="w-full">
+              {title}
+            </div>
+            <div id="product-price" className=" font-bold">
+              <span className="text-[#F8B602]">$</span>
+              {price}
+            </div>
           </div>
           <div
             id="add-button"

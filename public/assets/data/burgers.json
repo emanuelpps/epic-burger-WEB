@@ -3,56 +3,56 @@
     "title": "Classic Burger",
     "price": 8.99,
     "description": "A classic beef burger with lettuce, tomato, and cheese.",
-    "customerRating": 4.5,
+    "rating": 4.5,
     "image": "https://res.cloudinary.com/dehyuw4zu/image/upload/f_auto,q_auto/v1/Epic-burger/djbd9ilopeixkdbea2kh"
   },
   {
-    "title": "Cheese Lover's Burger",
+    "title": "Cheese Burger",
     "price": 9.99,
     "description": "A beef burger loaded with cheddar, Swiss, and American cheese.",
-    "customerRating": 4.7,
+    "rating": 4.7,
     "image": "https://res.cloudinary.com/dehyuw4zu/image/upload/f_auto,q_auto/v1/Epic-burger/djbd9ilopeixkdbea2kh"
   },
   {
     "title": "Bacon Burger",
     "price": 10.99,
     "description": "A beef burger topped with crispy bacon and cheddar cheese.",
-    "customerRating": 4.8,
+    "rating": 4.8,
     "image": "https://res.cloudinary.com/dehyuw4zu/image/upload/f_auto,q_auto/v1/Epic-burger/djbd9ilopeixkdbea2kh"
   },
   {
-    "title": "Mushroom Swiss Burger",
+    "title": "Mushroom Burger",
     "price": 11.49,
     "description": "A beef burger with sautéed mushrooms and Swiss cheese.",
-    "customerRating": 4.6,
+    "rating": 4.6,
     "image": "https://res.cloudinary.com/dehyuw4zu/image/upload/f_auto,q_auto/v1/Epic-burger/djbd9ilopeixkdbea2kh"
   },
   {
     "title": "BBQ Burger",
     "price": 10.49,
     "description": "A beef burger with BBQ sauce, onion rings, and cheddar cheese.",
-    "customerRating": 4.7,
+    "rating": 4.7,
     "image": "https://res.cloudinary.com/dehyuw4zu/image/upload/f_auto,q_auto/v1/Epic-burger/djbd9ilopeixkdbea2kh"
   },
   {
-    "title": "Spicy Jalapeno Burger",
+    "title": "Spicy Jalapeno",
     "price": 9.99,
     "description": "A beef burger with jalapenos, pepper jack cheese, and spicy mayo.",
-    "customerRating": 4.5,
+    "rating": 4.5,
     "image": "https://res.cloudinary.com/dehyuw4zu/image/upload/f_auto,q_auto/v1/Epic-burger/djbd9ilopeixkdbea2kh"
   },
   {
     "title": "Veggie Burger",
     "price": 8.49,
     "description": "A vegetarian burger with lettuce, tomato, and avocado.",
-    "customerRating": 4.4,
+    "rating": 4.4,
     "image": "https://res.cloudinary.com/dehyuw4zu/image/upload/f_auto,q_auto/v1/Epic-burger/djbd9ilopeixkdbea2kh"
   },
   {
     "title": "Chicken Burger",
     "price": 9.49,
     "description": "A grilled chicken burger with lettuce, tomato, and mayo.",
-    "customerRating": 4.6,
+    "rating": 4.6,
     "image": "https://res.cloudinary.com/dehyuw4zu/image/upload/f_auto,q_auto/v1/Epic-burger/djbd9ilopeixkdbea2kh"
   },
   {
@@ -63,10 +63,10 @@
     "image": "https://res.cloudinary.com/dehyuw4zu/image/upload/f_auto,q_auto/v1/Epic-burger/djbd9ilopeixkdbea2kh"
   },
   {
-    "title": "Double Beef Burger",
+    "title": "Double Burger",
     "price": 12.99,
     "description": "A double beef burger with double cheese and all the fixings.",
-    "customerRating": 4.8,
+    "rating": 4.8,
     "image": "https://res.cloudinary.com/dehyuw4zu/image/upload/f_auto,q_auto/v1/Epic-burger/djbd9ilopeixkdbea2kh"
   }
 ]
