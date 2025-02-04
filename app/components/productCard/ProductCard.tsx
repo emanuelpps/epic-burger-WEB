@@ -29,7 +29,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
         id="product-card"
         className="flex flex-col h-65 bg-white rounded-lg shadow-lg w-50 justify-center p-5"
       >
-        <div id="product-header" className="flex justify-between w-[90%]">
+        <div id="product-header" className="flex justify-between w-[95%]">
           <div id="discount-section">{discount ? discount : null}</div>
           <div id="like-section">
             <FcLikePlaceholder className="h-5 w-5" />
@@ -45,7 +45,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
         {
           //hacer un map y setear las estrellas por debajo de .5 es el numero anterior y si es supero el numero siguiente
         }
-        <div id="product-detail" className="flex justify-between w-[90%]">
+        <div id="product-detail" className="flex justify-between w-[95%]">
           <div id="price-title">
             <div id="product-title" className="w-full">
               {title}
@@ -57,7 +57,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
           </div>
           <div
             id="add-button"
-            className="flex justify-center items-center bg-[#F8B602] rounded-md"
+            className="flex justify-center items-center bg-[#F8B602] rounded-md h-10"
           >
             <HiOutlinePlusSm className="text-white h-10 w-10 p-1" />
           </div>
