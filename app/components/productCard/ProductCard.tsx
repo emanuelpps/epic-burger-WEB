@@ -21,7 +21,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
   rating,
   image,
   descrption,
-  like
+  like,
 }) => {
   return (
     <div id="product-card-container">

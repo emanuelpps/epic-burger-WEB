@@ -6,7 +6,7 @@ const CartContainer = () => {
   return (
     <div
       id="navbar-menu-cart"
-      className="flex items-center justify-center w-full relative"
+      className="flex items-center justify-center w-[10%] relative"
     >
       <div
         id="cart-container"

@@ -12,19 +12,19 @@ const MenuSelector = () => {
         className="flex items-center justify-center w-full gap-10 text-[#F23F39] font-semibold"
       >
         <Link
-          href={"/burgers"}
+          href={"/menu/burgers"}
           className="hover:border-b-[1px] hover:border-[#F23F39]"
         >
           Burgers
         </Link>
         <Link
-          href={"/sides"}
+          href={"/menu/sides"}
           className="hover:border-b-[1px] hover:border-[#F23F39]"
         >
           Sides
         </Link>
         <Link
-          href={"/Bebidas"}
+          href={"/menu/Bebidas"}
           className="hover:border-b-[1px] hover:border-[#F23F39]"
         >
           Bebidas

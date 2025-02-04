@@ -22,7 +22,7 @@ export const NavBar: React.FC = () => {
             <MenuSelector />
           </div>
         </div>
-        <div className="flex justify-center items-center w-[100%]">
+        <div className="flex justify-end items-center w-[100%]">
           <CartContainer />
           <Avatar />
         </div>
