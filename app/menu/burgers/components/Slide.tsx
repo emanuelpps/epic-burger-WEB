@@ -1,5 +1,5 @@
 "use client";
-import Image from "next/image";
+import { SliderContainer } from "@/app/components/sliders/SliderContainer";
 import { useState, useEffect } from "react";
 
 export const Slide = () => {
@@ -19,13 +19,7 @@ export const Slide = () => {
   }, [slides.length]);
   return (
     <div className="mt-10">
-      <Image
-        src={slides[slide]}
-        alt="burger promo barbacoa"
-        width={900}
-        height={600}
-        className="object-cover rounded-3xl"
-      />
+      <SliderContainer />
       <div id="dot-container" className="flex relative">
         <div className="absolute z-40 bottom-5 left-1/2 transform -translate-x-1/2 rounded-full flex gap-2">
           {slides.map((_, index) => (
