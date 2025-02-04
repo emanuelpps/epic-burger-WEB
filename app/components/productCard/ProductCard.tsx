@@ -11,6 +11,7 @@ interface ProductCardProps {
   rating: number;
   image: string;
   descrption?: string;
+  like: boolean;
 }
 
 export const ProductCard: React.FC<ProductCardProps> = ({
@@ -20,6 +21,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
   rating,
   image,
   descrption,
+  like
 }) => {
   return (
     <div id="product-card-container">

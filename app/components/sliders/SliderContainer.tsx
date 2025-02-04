@@ -10,15 +10,15 @@ export const SliderContainer = () => {
   const [sliderIndex, setSliderIndex] = useState(0);
   const [sliderImages] = useState<SliderImages[]>([
     {
-      src: "https://res.cloudinary.com/dkgoszhfr/image/upload/f_auto,q_auto/dnpe7v3yrv4jt1nibv2z",
+      src: "https://res.cloudinary.com/dehyuw4zu/image/upload/f_auto,q_auto/v1/Epic-burger/wfly6n4d36iwft1u3mfo",
       alt: "Epic Barbacoa 15% OFF",
     },
     {
-      src: "https://res.cloudinary.com/dkgoszhfr/image/upload/f_auto,q_auto/tswrdyuk6loftbctawob",
+      src: "https://res.cloudinary.com/dehyuw4zu/image/upload/f_auto,q_auto/v1/Epic-burger/rlcsm2bee3tdzky1vjng",
       alt: "Epic Combo 2x1",
     },
     {
-      src: "https://res.cloudinary.com/dkgoszhfr/image/upload/f_auto,q_auto/cealezbvw7qh4qvt6lhy",
+      src: "https://res.cloudinary.com/dehyuw4zu/image/upload/f_auto,q_auto/v1/Epic-burger/otcql0jaf7mxq5m7sbux",
       alt: "Epic Crispy Onion 10% OFF",
     },
   ]);
@@ -26,7 +26,7 @@ export const SliderContainer = () => {
     <div>
       <Image
         src={sliderImages[sliderIndex].src}
-        width={500}
+        width={1200}
         height={200}
         alt={sliderImages[sliderIndex].src}
       />

@@ -6,11 +6,11 @@ const CartContainer = () => {
   return (
     <div
       id="navbar-menu-cart"
-      className="flex items-center justify-center w-full"
+      className="flex items-center justify-center w-full relative"
     >
       <div
         id="cart-container"
-        className="relative flex items-center justify-center w-full"
+        className="relative flex items-center justify-center"
       >
         <CartBadge />
         <TiShoppingCart className="text-[1.5rem] text-[#F23F39]" />
