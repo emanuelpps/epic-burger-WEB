@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 interface SliderImages {
   src: string;
@@ -22,6 +22,14 @@ export const SliderContainer = () => {
       alt: "Epic Crispy Onion 10% OFF",
     },
   ]);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setSliderIndex((prevSlide) => (prevSlide + 1) % sliderImages.length);
+    }, 4000);
+
+    return () => clearInterval(interval);
+  }, [sliderImages.length]);
   return (
     <div>
       <Image
@@ -30,6 +38,18 @@ export const SliderContainer = () => {
         height={200}
         alt={sliderImages[sliderIndex].src}
       />
+      <div id="dot-container" className="flex relative">
+        <div className="absolute z-40 bottom-5 left-1/2 transform -translate-x-1/2 rounded-full flex gap-2">
+          {sliderImages.map((_, index) => (
+            <div
+              key={index}
+              className={`${
+                sliderIndex === index ? "bg-white" : "bg-slate-400"
+              } w-3 h-3 rounded-full`}
+            ></div>
+          ))}
+        </div>
+      </div>
     </div>
   );
 };
