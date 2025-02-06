@@ -2,7 +2,6 @@ import Image from "next/image";
 import React from "react";
 import { HiOutlinePlusSm } from "react-icons/hi";
 import { FcLikePlaceholder } from "react-icons/fc";
-import { FcLike } from "react-icons/fc";
 
 interface ProductCardProps {
   title: string;
