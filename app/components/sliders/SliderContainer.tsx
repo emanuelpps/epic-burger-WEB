@@ -37,6 +37,7 @@ export const SliderContainer = () => {
         width={1200}
         height={200}
         alt={sliderImages[sliderIndex].src}
+        className="rounded-2xl"
       />
       <div id="dot-container" className="flex relative">
         <div className="absolute z-40 bottom-5 left-1/2 transform -translate-x-1/2 rounded-full flex gap-2">
