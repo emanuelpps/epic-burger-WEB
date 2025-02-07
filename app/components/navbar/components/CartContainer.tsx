@@ -1,6 +1,7 @@
 import React from "react";
 import { TiShoppingCart } from "react-icons/ti";
 import CartBadge from "./CartBadge";
+import Link from "next/link";
 
 const CartContainer = () => {
   return (
@@ -12,8 +13,10 @@ const CartContainer = () => {
         id="cart-container"
         className="relative flex items-center justify-center"
       >
-        <CartBadge />
-        <TiShoppingCart className="text-[1.5rem] text-[#F23F39]" />
+        <Link href={"/cart"}>
+          <CartBadge />
+          <TiShoppingCart className="text-[1.5rem] text-[#F23F39]" />
+        </Link>
       </div>
     </div>
   );
