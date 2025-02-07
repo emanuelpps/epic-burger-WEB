@@ -1,22 +1,32 @@
-import React from "react";
-import Link from "next/link";
+"use client";
+import React, { useState } from "react";
+import { DropDownButton } from "./DropDownButton";
 
 const ProfileDropdown = () => {
+  const [dropDownOptions] = useState([
+    {
+      label: "Mi Perfil",
+      link: "/profile",
+    },
+    {
+      label: "Favoritos",
+      link: "/favoritos",
+    },
+    {
+      label: "Mis Pedidos",
+      link: "/mis-pedidos",
+    },
+    {
+      label: "Cerrar Sesión",
+      link: "/logout",
+    },
+  ]);
   return (
     <div className="absolute bg-[#f0eeeb] w-40 h-40 top-6 right-3">
-      <div>
-        <Link href="/profile" className="block p-2">
-          Mi Perfil
-        </Link>
-        <Link href="/favoritos" className="block p-2">
-          Favoritos
-        </Link>
-        <Link href="/mis-pedidos" className="block p-2">
-          Mis Pedidos
-        </Link>
-        <Link href="/logout" className="block p-2">
-          Cerrar Sesión
-        </Link>
+      <div className="flex flex-col gap-2 p-2">
+        {dropDownOptions.map((option, index) => (
+          <DropDownButton key={index} label={option.label} link={option.link} />
+        ))}
       </div>
     </div>
   );
