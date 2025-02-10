@@ -24,7 +24,7 @@ const MenuSelector = () => {
           Sides
         </Link>
         <Link
-          href={"/menu/Bebidas"}
+          href={"/menu/bebidas"}
           className="hover:border-b-[1px] hover:border-[#F23F39]"
         >
           Bebidas
