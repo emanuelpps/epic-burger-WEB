@@ -1,8 +1,17 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import avatarImage from "@/public/assets/images/avatar.png";
 import Image from "next/image";
+import { UserData } from "./types/types";
+import Input from "./components/input";
 
-const page = () => {
+const Page: React.FC = () => {
+  const [userData, setUserData] = useState<UserData>({
+    name: "pepito gonzalez",
+    email: "emaiul@email.com",
+    phone: "123456789",
+    address: "calle falsa 123",
+  });
   return (
     <div
       id="profile-page"
@@ -22,24 +31,36 @@ const page = () => {
               className="bg-slate-300 rounded-full border-2 border-primary p-0"
             />
             <div className="flex justify-center items-center">
-              <button className="bg-slate-300 p-1 rounded-lg">
+              <button className="bg-slate-300 p-2 rounded-lg border-[0.1px] border-black">
                 cambiar imagen
               </button>
             </div>
           </div>
         </div>
-        <div>nombre y apellido</div>
+        <div className="flex flex-col gap-5">
+          <h3>Nombre</h3>
+          <Input data={userData.name} />
+        </div>
       </div>
       <div
         id="profile-data"
         className="flex w-[90%] justify-evenly items-center mt-20"
       >
-        <div>email</div>
-        <div>telefono</div>
-        <div>direccion</div>
+        <div>
+          <h3>Email</h3>
+          <Input data={userData.email} />
+        </div>
+        <div>
+          <h3>Telefono</h3>
+          <Input data={userData.phone} />
+        </div>
+        <div>
+          <h3>Direccion</h3>
+          <Input data={userData.address} />
+        </div>
       </div>
     </div>
   );
 };
 
-export default page;
+export default Page;
