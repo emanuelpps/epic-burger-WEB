@@ -10,11 +10,11 @@ const ProfileDropdown = () => {
     },
     {
       label: "Favoritos",
-      link: "/favoritos",
+      link: "/profile/favoritos",
     },
     {
       label: "Mis Pedidos",
-      link: "/mis-pedidos",
+      link: "/profile/mis-pedidos",
     },
     {
       label: "Cerrar Sesión",

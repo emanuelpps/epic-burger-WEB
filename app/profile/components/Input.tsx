@@ -13,7 +13,7 @@ const Input: React.FC<InputProps> = ({ data }) => {
     <div className="flex gap-10">
       <input
         type="text"
-        className="bg-gray-200 rounded-lg"
+        className="bg-gray-200 rounded-lg p-2"
         value={data}
         onChange={handleChange}
         disabled={!isEnable}

@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import avatarImage from "@/public/assets/images/avatar.png";
 import Image from "next/image";
 import { UserData } from "./types/types";
-import Input from "./components/input";
+import Input from "./components/Input";
 
 const Page: React.FC = () => {
   const [userData, setUserData] = useState<UserData>({
