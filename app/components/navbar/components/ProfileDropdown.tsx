@@ -22,7 +22,7 @@ const ProfileDropdown = () => {
     },
   ]);
   return (
-    <div className="absolute bg-[#f0eeeb] w-40 h-40 top-6 right-3">
+    <div className="absolute bg-[#f0eeeb] w-40 h-auto top-6 right-3 rounded-lg shadow-lg">
       <div className="flex flex-col gap-2 p-2">
         {dropDownOptions.map((option, index) => (
           <DropDownButton key={index} label={option.label} link={option.link} />

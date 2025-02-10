@@ -7,5 +7,12 @@ interface Props {
 }
 
 export const DropDownButton: React.FC<Props> = ({ label, link }) => {
-  return <Link href={link} className="border-b-[1px] shadow-black-[1px] hover:opacity-35">{label}</Link>;
+  return (
+    <Link
+      href={link}
+      className="border-b-[1px] shadow-black-[1px] hover:opacity-35 text-[#F23F39] font-medium"
+    >
+      {label}
+    </Link>
+  );
 };
