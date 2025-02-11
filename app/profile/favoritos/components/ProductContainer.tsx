@@ -1,5 +1,6 @@
 "use client";
 import { PrimaryTitle } from "@/app/components/titles/PrimaryTitle";
+import Image from "next/image";
 import React, { useState } from "react";
 
 const ProductContainer = () => {
@@ -31,7 +32,7 @@ const ProductContainer = () => {
   ]);
   return (
     <div className="flex w-[100%] justify-center items-center mt-20">
-      <div className="bg-[#F23F39] w-[80%] h-[500px] flex flex-col p-10 rounded-lg">
+      <div className="bg-[#F23F39] w-[80%] flex flex-col p-10 rounded-lg">
         <div className="flex">
           <PrimaryTitle text="Productos Favoritos" type="tertiary" />
         </div>
@@ -41,7 +42,14 @@ const ProductContainer = () => {
               key={product.id}
               className="flex gap-10 bg w-full items-center"
             >
-              <img src={product.image} alt={product.name} className=""/>
+              <Image
+                src={
+                  "https://res.cloudinary.com/dehyuw4zu/image/upload/f_auto,q_auto/v1/Epic-burger/djbd9ilopeixkdbea2kh"
+                }
+                alt={product.name}
+                width={100}
+                height={100}
+              />
               <div className="flex gap-10">
                 <h3>{product.name}</h3>
                 <h3>{product.price}</h3>
