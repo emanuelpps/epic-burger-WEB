@@ -1,8 +1,7 @@
 "use client";
-import { PrimaryTitle } from "@/app/components/titles/PrimaryTitle";
-import Image from "next/image";
 import React, { useState } from "react";
-import { TbTrashX } from "react-icons/tb";
+import BoxContainer from "../../components/BoxContainer";
+import Product from "./Product";
 
 const ProductContainer = () => {
   const [productData] = useState([
@@ -32,39 +31,15 @@ const ProductContainer = () => {
     },
   ]);
   return (
-    <div className="flex w-[100%] justify-center items-center mt-20">
-      <div className="bg-[#F23F39] w-[50%] flex flex-col p-10 rounded-lg">
-        <div className="flex">
-          <PrimaryTitle text="Productos Favoritos" type="tertiary" />
-        </div>
-        <div className="bg-slate-100 h-full w-full rounded-xl flex flex-col gap-10 p-10">
+    <>
+      <BoxContainer text="Favoritos" type="tertiary">
+        <div className="flex flex-col gap-4 bg-slate-100 w-full p-4 rounded-lg">
           {productData.map((product) => (
-            <div
-              key={product.id}
-              className="flex gap-10 bg w-full items-center"
-            >
-              <Image
-                src={
-                  "https://res.cloudinary.com/dehyuw4zu/image/upload/f_auto,q_auto/v1/Epic-burger/djbd9ilopeixkdbea2kh"
-                }
-                alt={product.name}
-                width={100}
-                height={100}
-              />
-              <div className="flex gap-10">
-                <h3>{product.name}</h3>
-                <h3>{product.price}</h3>
-                <div>
-                  <button className="bg-slate-300 p-2 rounded-lg border-[0.1px] border-black">
-                    <TbTrashX className="text-red-600" />
-                  </button>
-                </div>
-              </div>
-            </div>
+            <Product key={product.id} product={product} />
           ))}
         </div>
-      </div>
-    </div>
+      </BoxContainer>
+    </>
   );
 };
 

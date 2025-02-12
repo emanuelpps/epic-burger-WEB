@@ -1,7 +1,13 @@
-import React from "react";
+import BoxContainer from "../../components/BoxContainer";
 
 const OrdersContainer = () => {
-  return <div>OrdersContainer</div>;
+  return (
+    <>
+      <BoxContainer text="Mis Pedidos" type="tertiary">
+        <div>hola</div>
+      </BoxContainer>
+    </>
+  );
 };
 
 export default OrdersContainer;
