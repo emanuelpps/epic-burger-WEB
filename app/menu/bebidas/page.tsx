@@ -6,7 +6,7 @@ const Page = () => {
     <div className="w-full flex justify-center items-center h-full flex-col bg-[#FFFBF2]">
       <div className="w-[100%] flex justify-center items-center">
         <div className="w-[80%] mt-10">
-          <PrimaryTitle text="Bebidas" />
+          <PrimaryTitle text="Bebidas" type="primary" />
         </div>
       </div>
       <ProductContainer />
