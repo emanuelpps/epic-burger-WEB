@@ -37,9 +37,11 @@ const OrdersContainer = () => {
   return (
     <>
       <BoxContainer text="Mis Pedidos" type="tertiary">
-        {ordersData.map((order) => (
-          <Order key={order.id} order={order} />
-        ))}
+        <div className="flex flex-col gap-4 bg-slate-100 w-full p-4 rounded-lg">
+          {ordersData.map((order) => (
+            <Order key={order.id} order={order} />
+          ))}
+        </div>
       </BoxContainer>
     </>
   );
