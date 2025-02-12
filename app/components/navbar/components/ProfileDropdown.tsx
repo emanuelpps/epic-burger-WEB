@@ -14,7 +14,7 @@ const ProfileDropdown = () => {
     },
     {
       label: "Mis Pedidos",
-      link: "/profile/mis-pedidos",
+      link: "/profile/pedidos",
     },
     {
       label: "Cerrar Sesión",

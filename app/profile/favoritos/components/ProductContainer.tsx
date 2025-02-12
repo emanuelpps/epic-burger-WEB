@@ -2,6 +2,7 @@
 import { PrimaryTitle } from "@/app/components/titles/PrimaryTitle";
 import Image from "next/image";
 import React, { useState } from "react";
+import { TbTrashX } from "react-icons/tb";
 
 const ProductContainer = () => {
   const [productData] = useState([
@@ -32,7 +33,7 @@ const ProductContainer = () => {
   ]);
   return (
     <div className="flex w-[100%] justify-center items-center mt-20">
-      <div className="bg-[#F23F39] w-[80%] flex flex-col p-10 rounded-lg">
+      <div className="bg-[#F23F39] w-[50%] flex flex-col p-10 rounded-lg">
         <div className="flex">
           <PrimaryTitle text="Productos Favoritos" type="tertiary" />
         </div>
@@ -53,6 +54,11 @@ const ProductContainer = () => {
               <div className="flex gap-10">
                 <h3>{product.name}</h3>
                 <h3>{product.price}</h3>
+                <div>
+                  <button className="bg-slate-300 p-2 rounded-lg border-[0.1px] border-black">
+                    <TbTrashX className="text-red-600" />
+                  </button>
+                </div>
               </div>
             </div>
           ))}
